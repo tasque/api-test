@@ -1,0 +1,14 @@
+subprojects{
+    apply plugin: "groovy"
+    apply plugin: "eclipse"
+
+    repositories {
+        //resolve dependencies for generation of spock reports
+        mavenCentral()
+		jcenter()
+    }
+
+    defaultTasks "clean", "build"
+}
+
+defaultTasks "clean", "build"
